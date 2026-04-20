@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tree Service Near Mee | Tree Removal, Landscaping, Stump Grinding</title>
+
+  <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <meta name="description" content="Tree Service Near Mee (TSNM) offers tree removal, bush trimming, landscaping, and stump grinding with free inspections & fixed quotes valid for 12 months. Serving Fort Wayne, IN and surrounding areas." />
+  <meta name="theme-color" content="#0b0b0c" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optional: clean pro font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css"/>
+
+</head>
+
+<body>
+  <!-- Top utility bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="pill">Fort Wayne, IN</span>
+        <span class="muted">Free Inspections • Fixed Quotes • Premium Financing</span>
+      </div>
+      <div class="topbar__right">
+        <a class="topbar__link" href="tel:+12604669997" aria-label="Call Tree Service Near Mee">(260) 466-9997</a>
+        <span class="dot">•</span>
+        <a class="topbar__link" href="mailto:marcusringswald13@gmail.com" aria-label="Email Tree Service Near Mee">marcusringswald13@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="top">
+    <div class="container navbar__inner">
+      <a class="brand" href="#top" aria-label="Tree Service Near Mee Home">
+        <img src="img/TSNMlogo.jpg" alt="Tree Service Near Mee Logo" class="brand__logo" />
+        <div class="brand__text">
+          <span class="brand__name">Tree Service Near Mee</span>
+          <span class="brand__tag">Tree • Shrub • Stump • Landscaping</span>
+        </div>
+      </a>
+
+      <button class="navtoggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Primary navigation">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#why" class="nav__link">Why TSNM</a>
+        <a href="#pricing" class="nav__link">Pricing</a>
+        <a href="#estimate" class="nav__link nav__link--cta">Free Inspection &amp; Estimate</a>
+        <a href="#faqs" class="nav__link">FAQ's</a>
+        <a href="#reviews" class="nav__link">Reviews</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero">
+    <!-- Background image slot (replace hero-bg.jpg with your image) -->
+    <div class="hero__bg" role="img" aria-label="Tree service background image"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__inner">
+      <div class="hero__left">
+        <!-- Center-top logo (as requested) -->
+        <div class="hero__logoWrap">
+          <img src="img/TSNMlogo.jpg" alt="Tree Service Near Mee Logo" class="hero__logo" />
+        </div>
+
+        <h1 class="hero__headline">
+          Honest Worksmanship • Great Price... Tree, Shrub, &amp; Stump Services -
+          Top-Tier Certified Landscaping...
+        </h1>
+
+        <p class="hero__subhead">
+          Reliable, professional yard transformations with a <strong>free inspection</strong>,
+          a <strong>down-to-the-penny quote</strong>, and options to <strong>pay the way you want</strong>.
+        </p>
+
+        <div class="hero__badges">
+          <div class="badge">
+            <span class="badge__icon">✓</span>
+            <span>Fixed quotes valid 12 months</span>
+          </div>
+          <div class="badge">
+            <span class="badge__icon">✓</span>
+            <span>Premium financing available</span>
+          </div>
+          <div class="badge">
+            <span class="badge__icon">✓</span>
+            <span>Fast scheduling &amp; clean job sites</span>
+          </div>
+        </div>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#estimate">Get Free Inspection</a>
+          <a class="btn btn--ghost" href="tel:+12604669997">Call (260) 466-9997</a>
+        </div>
+
+        <div class="hero__owner">
+          <div class="ownerCard">
+            <div class="ownerCard__title">Owner / Contact</div>
+            <div class="ownerCard__row"><span class="muted">Marcus Ringswald</span></div>
+            <div class="ownerCard__row"><a href="tel:+12604669997">(260) 466-9997</a></div>
+            <div class="ownerCard__row"><a href="mailto:marcusringswald13@gmail.com">marcusringswald13@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero form (right side) -->
+      <aside class="hero__right" aria-label="Sign up form">
+        <div class="card card--glass">
+          <div class="card__header">
+            <h2 class="card__title">Sign up with a Landscaping professional</h2>
+            <p class="card__subtitle">Request a free inspection &amp; we’ll reach out quickly.</p>
+          </div>
+
+          <form id="heroLeadForm" class="form" novalidate>
+            <div class="form__grid">
+              <div class="field">
+                <label for="heroFirst">First name</label>
+                <input id="heroFirst" name="firstName" type="text" autocomplete="given-name" required />
+                <small class="error" data-error-for="heroFirst"></small>
+              </div>
+
+              <div class="field">
+                <label for="heroLast">Last name</label>
+                <input id="heroLast" name="lastName" type="text" autocomplete="family-name" required />
+                <small class="error" data-error-for="heroLast"></small>
+              </div>
+
+              <div class="field field--full">
+                <label for="heroPhone">Phone</label>
+                <input id="heroPhone" name="phone" type="tel" autocomplete="tel" placeholder="(260) 555-1234" required />
+                <small class="error" data-error-for="heroPhone"></small>
+              </div>
+
+              <div class="field field--full">
+                <label for="heroEmail">Email</label>
+                <input id="heroEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+                <small class="error" data-error-for="heroEmail"></small>
+              </div>
+
+              <div class="field field--full">
+                <label for="heroService">What do you need help with?</label>
+                <select id="heroService" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Tree removal</option>
+                  <option>Bush trimming</option>
+                  <option>Landscaping</option>
+                  <option>Stump grinding & removal</option>
+                  <option>Not sure / multiple</option>
+                </select>
+                <small class="error" data-error-for="heroService"></small>
+              </div>
+
+              <div class="field field--full">
+                <label for="heroMessage">Notes (optional)</label>
+                <textarea id="heroMessage" name="message" rows="3" placeholder="Tell us what you’re seeing in the yard..."></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn--primary btn--full" type="submit">
+              Request Free Inspection
+            </button>
+
+            <p class="form__fineprint">
+              By submitting, you agree TSNM may contact you by phone, email, or SMS regarding your request.
+            </p>
+
+            <div class="form__success" id="heroFormSuccess" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <h2>Services</h2>
+        <p class="section__sub">
+          We don’t just “cut and go.” We help you prevent property damage, reduce risk, and improve curb appeal—fast.
+        </p>
+      </div>
+
+      <div class="serviceGrid">
+        <!-- Tree Removal -->
+        <article class="serviceCard">
+          <div class="serviceCard__top">
+            <h3>Tree Removal</h3>
+            <p>
+              Remove hazardous, dead, storm-damaged, or overgrown trees to protect your home, rooflines, and vehicles.
+            </p>
+          </div>
+
+          <div class="serviceCard__body">
+            <ul class="bullets">
+              <li>Reduces risk of limb/whole-tree failure</li>
+              <li>Prevents root intrusion and grading issues</li>
+              <li>Improves light, clearance, and overall yard function</li>
+            </ul>
+
+            <details class="drop">
+              <summary>Pros &amp; Cons of waiting</summary>
+              <div class="drop__content">
+                <div class="twoCol">
+                  <div class="panel">
+                    <h4>Pros of acting sooner</h4>
+                    <ul>
+                      <li>Lower chance of emergency storm damage</li>
+                      <li>Less collateral damage to fences, roofs, landscaping</li>
+                      <li>More scheduling flexibility and better pricing windows</li>
+                    </ul>
+                  </div>
+                  <div class="panel">
+                    <h4>Cons of waiting</h4>
+                    <ul>
+                      <li>Higher risk of damage during storms and high winds</li>
+                      <li>Dead limbs can fall unexpectedly</li>
+                      <li>Removal can become more complex/costly over time</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- Bush Trimming -->
+        <article class="serviceCard">
+          <div class="serviceCard__top">
+            <h3>Bush Trimming</h3>
+            <p>
+              Clean up overgrowth, improve shape, restore sight lines, and keep shrubs from choking your landscape.
+            </p>
+          </div>
+
+          <div class="serviceCard__body">
+            <ul class="bullets">
+              <li>Supports healthier growth and airflow</li>
+              <li>Improves curb appeal and property value perception</li>
+              <li>Reduces pest habitats and moisture traps</li>
+            </ul>
+
+            <details class="drop">
+              <summary>Pros &amp; Cons of waiting</summary>
+              <div class="drop__content">
+                <div class="twoCol">
+                  <div class="panel">
+                    <h4>Pros of acting sooner</h4>
+                    <ul>
+                      <li>Prevents disease and dead zones in dense growth</li>
+                      <li>Stops bushes from damaging siding/windows and walkways</li>
+                      <li>Reduces recurring cleanup headaches</li>
+                    </ul>
+                  </div>
+                  <div class="panel">
+                    <h4>Cons of waiting</h4>
+                    <ul>
+                      <li>Overgrowth can hide hazards and attract pests</li>
+                      <li>More aggressive cuts later can stress plants</li>
+                      <li>Shaded areas can thin grass and create muddy zones</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- Landscaping -->
+        <article class="serviceCard">
+          <div class="serviceCard__top">
+            <h3>Landscaping</h3>
+            <p>
+              From cleanups to refreshes—mulch, edging, shaping, and yard improvements that make your home stand out.
+            </p>
+          </div>
+
+          <div class="serviceCard__body">
+            <ul class="bullets">
+              <li>Improves drainage flow and appearance</li>
+              <li>Creates clean lines and a “finished” look</li>
+              <li>Protects foundations by managing vegetation and water</li>
+            </ul>
+
+            <details class="drop">
+              <summary>Pros &amp; Cons of waiting</summary>
+              <div class="drop__content">
+                <div class="twoCol">
+                  <div class="panel">
+                    <h4>Pros of acting sooner</h4>
+                    <ul>
+                      <li>Locks in curb appeal improvements before peak season</li>
+                      <li>Prevents weeds from seeding and spreading</li>
+                      <li>Reduces erosion and muddy areas with proper grading/coverage</li>
+                    </ul>
+                  </div>
+                  <div class="panel">
+                    <h4>Cons of waiting</h4>
+                    <ul>
+                      <li>Weeds and overgrowth can compound quickly</li>
+                      <li>Neglected beds can invite pests and mold</li>
+                      <li>Delays often increase labor time and cost</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- Stump Grinding -->
+        <article class="serviceCard">
+          <div class="serviceCard__top">
+            <h3>Stump Grinding &amp; Removal</h3>
+            <p>
+              Remove ugly, hazardous stumps so you can reclaim the space—safe for mowing, kids, pets, and new landscaping.
+            </p>
+          </div>
+
+          <div class="serviceCard__body">
+            <ul class="bullets">
+              <li>Eliminates trip hazards and mower damage</li>
+              <li>Prevents regrowth and root-related issues</li>
+              <li>Improves usable yard space and future plans</li>
+            </ul>
+
+            <details class="drop">
+              <summary>Pros &amp; Cons of waiting</summary>
+              <div class="drop__content">
+                <div class="twoCol">
+                  <div class="panel">
+                    <h4>Pros of acting sooner</h4>
+                    <ul>
+                      <li>Stops pests from nesting in rotting wood</li>
+                      <li>Prevents sinking/uneven ground later</li>
+                      <li>Makes re-seeding and landscaping easier</li>
+                    </ul>
+                  </div>
+                  <div class="panel">
+                    <h4>Cons of waiting</h4>
+                    <ul>
+                      <li>Rotten stumps can attract insects</li>
+                      <li>Roots can cause uneven grade and soft spots</li>
+                      <li>Delays limit your landscaping options</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+
+      <div class="callout">
+        <div class="callout__text">
+          <h3>Not sure what you need?</h3>
+          <p>We’ll assess your yard and give you a clear, fixed quote with no obligation.</p>
+        </div>
+        <a class="btn btn--primary" href="#estimate">Schedule Free Inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why TSNM -->
+ <section class="section section--alt why-section" id="why">
+  <div class="why-bg"></div>
+  <div class="why-overlay"></div>
+
+  <div class="container why-content">
+
+    <div class="container">
+      <div class="section__head">
+        <h2>Why Tree Service Near Mee</h2>
+        <p class="section__sub">
+          Most yard and landscaping crews only take cash. TSNM is built differently—more flexible, more accountable, and more committed to doing it right.
+        </p>
+      </div>
+
+      <div class="whyGrid">
+        <div class="whyCard">
+          <h3>Flexible payment options</h3>
+          <p>
+            We offer <strong>premium financing</strong> for homeowners who want to lighten the financial load while still achieving the yard of their dreams.
+          </p>
+        </div>
+
+        <div class="whyCard">
+          <h3>Commitment to quality</h3>
+          <p>
+            Clear scope, clean work sites, and professional execution. We focus on results you can see—without cutting corners.
+          </p>
+        </div>
+
+        <div class="whyCard">
+          <h3>Clear communication</h3>
+          <p>
+            You get straightforward expectations, scheduling clarity, and a quote that’s easy to understand and easy to trust.
+          </p>
+        </div>
+
+        <div class="whyCard">
+          <h3>Professional inspection process</h3>
+          <p>
+            A landscaping expert visits your property, assesses what needs done, and provides a <strong>down-to-the-penny</strong> quote.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section__head">
+        <h2>Pricing</h2>
+        <p class="section__sub">
+          We offer <strong>free, no-obligation inspections</strong>. A professional landscaping expert will assess your needs and provide a fixed quote
+          that stays valid for <strong>12 months</strong>.
+        </p>
+      </div>
+
+      <div class="pricingGrid">
+        <div class="priceCard">
+          <h3>Free Inspection</h3>
+          <p class="muted">No obligation. No pressure.</p>
+          <ul>
+            <li>On-site assessment by a professional</li>
+            <li>Clear scope &amp; recommended options</li>
+            <li>Fast scheduling</li>
+          </ul>
+        </div>
+
+        <div class="priceCard priceCard--highlight">
+          <h3>Fixed Quote (12 Months)</h3>
+          <p class="muted">Down-to-the-penny pricing.</p>
+          <ul>
+            <li>Helps with inflation’s costs</li>
+            <li>Guarantees you know what it takes to get the job done</li>
+            <li>No cut corners, no guesswork—authentic quotes you can trust</li>
+          </ul>
+          <a class="btn btn--primary btn--full" href="#estimate">Get My Quote</a>
+        </div>
+
+        <div class="priceCard">
+          <h3>Premium Financing</h3>
+          <p class="muted">Pay the way you want.</p>
+          <ul>
+            <li>Spread cost over time (when eligible)</li>
+            <li>Make progress without financial strain</li>
+            <li>Get the yard you want now</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Inspection & Estimate -->
+  <section class="section section--alt estimate-section" id="estimate">
+  <div class="estimate-bg"></div>
+  <div class="estimate-overlay"></div>
+
+  <div class="container estimate-content">
+
+    <div class="container">
+      <div class="section__head">
+        <h2>Free Inspection &amp; Estimate</h2>
+        <p class="section__sub">
+          Fill this out and we’ll contact you to schedule. Your info goes straight to the owner.
+        </p>
+      </div>
+
+      <div class="estimateWrap">
+        <div class="card">
+          <div class="card__header">
+            <h3 class="card__title">Request an inspection</h3>
+            <p class="card__subtitle">We’ll confirm details and get you on the schedule.</p>
+          </div>
+
+          <form id="estimateForm" class="form" novalidate>
+            <div class="form__grid form__grid--wide">
+              <div class="field">
+                <label for="firstName">First name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required />
+                <small class="error" data-error-for="firstName"></small>
+              </div>
+
+              <div class="field">
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required />
+                <small class="error" data-error-for="lastName"></small>
+              </div>
+
+              <div class="field field--full">
+                <label for="street">Street address</label>
+                <input id="street" name="street" type="text" autocomplete="street-address" required />
+                <small class="error" data-error-for="street"></small>
+              </div>
+
+              <div class="field">
+                <label for="city">City / Township</label>
+                <input id="city" name="city" type="text" autocomplete="address-level2" required />
+                <small class="error" data-error-for="city"></small>
+              </div>
+
+              <div class="field">
+                <label for="state">State</label>
+                <input id="state" name="state" type="text" autocomplete="address-level1" placeholder="IN" required />
+                <small class="error" data-error-for="state"></small>
+              </div>
+
+              <div class="field">
+                <label for="zip">Zip code</label>
+                <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" required />
+                <small class="error" data-error-for="zip"></small>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+                <small class="error" data-error-for="phone"></small>
+              </div>
+
+              <div class="field field--full">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <small class="error" data-error-for="email"></small>
+              </div>
+
+              <div class="field field--full">
+                <label>Are you the homeowner?</label>
+                <div class="radioRow">
+                  <label class="radio">
+                    <input type="radio" name="homeowner" value="Yes" required />
+                    <span>Yes</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="homeowner" value="No" />
+                    <span>No</span>
+                  </label>
+                </div>
+                <small class="error" data-error-for="homeowner"></small>
+              </div>
+
+              <div class="field field--full">
+                <label>Do you have a spouse?</label>
+                <div class="radioRow">
+                  <label class="radio">
+                    <input type="radio" name="spouse" value="Yes" required />
+                    <span>Yes</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="spouse" value="No" />
+                    <span>No</span>
+                  </label>
+                </div>
+                <small class="error" data-error-for="spouse"></small>
+              </div>
+
+              <div class="field field--full">
+                <label for="workNeeded">What work do you need done? (optional)</label>
+                <textarea id="workNeeded" name="workNeeded" rows="4" placeholder="Example: Remove 2 dead trees in backyard + grind stumps + trim front bushes."></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Submit Request</button>
+            <p class="form__fineprint">
+              By submitting, you agree TSNM may contact you by phone, email, or SMS regarding your request.
+            </p>
+
+            <div class="form__success" id="estimateFormSuccess" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="sideInfo">
+          <div class="sideInfo__card">
+            <h3>What happens next?</h3>
+            <ol>
+              <li>We contact you to confirm details.</li>
+              <li>We schedule a free inspection.</li>
+              <li>You get a fixed quote valid for 12 months.</li>
+            </ol>
+          </div>
+
+          <div class="sideInfo__card">
+            <h3>Prefer to call?</h3>
+            <p>
+              <a class="phoneBig" href="tel:+12604669997">(260) 466-9997</a><br/>
+              <span class="muted">Owner: Marcus Ringswald</span>
+            </p>
+            <a class="btn btn--ghost btn--full" href="mailto:marcusringswald13@gmail.com">Email Us</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="section" id="faqs">
+    <div class="container">
+      <div class="section__head">
+        <h2>FAQ's</h2>
+        <p class="section__sub">Common questions about tree services, landscaping, and bush removal.</p>
+      </div>
+
+      <div class="faqList" id="faqList">
+        <details class="faq">
+          <summary>How do I know if a tree needs to be removed?</summary>
+          <div class="faq__content">
+            Signs include dead limbs, visible rot, leaning, storm damage, root heaving, and branches threatening structures. We’ll confirm during the free inspection.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>Can you remove a tree close to a house or power lines?</summary>
+          <div class="faq__content">
+            Many can be removed safely using controlled cuts and sectional removal. If a utility company must be involved, we’ll tell you during inspection.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>What’s the best time of year for bush trimming?</summary>
+          <div class="faq__content">
+            It depends on the plant type. Generally, trimming at the right time supports healthy regrowth and reduces disease risk. We’ll recommend the best timing.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>Do you haul away debris and leave the yard clean?</summary>
+          <div class="faq__content">
+            Yes—cleanup is part of professional service. We’ll confirm what’s included in your quote so expectations are crystal clear.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>What’s the difference between stump grinding and full stump removal?</summary>
+          <div class="faq__content">
+            Grinding removes the stump below grade and is typically faster and less disruptive. Full removal can involve more excavation. We’ll advise based on your goals.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>Will stump grinding leave a hole or mess?</summary>
+          <div class="faq__content">
+            Grinding creates wood chips and a shallow depression. We can discuss backfill options and how you want the area finished.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>Do you offer financing?</summary>
+          <div class="faq__content">
+            Yes—TSNM offers premium financing options (when eligible) to spread out costs and keep the project affordable.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>How does the 12-month fixed quote help me?</summary>
+          <div class="faq__content">
+            It protects you from price swings and inflation. You know exactly what the work will cost and can plan confidently.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>How quickly can you schedule an inspection?</summary>
+          <div class="faq__content">
+            Scheduling depends on demand, but we aim to respond quickly and get you on the calendar as soon as possible.
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>Are your inspections really free and no-obligation?</summary>
+          <div class="faq__content">
+            Yes. We inspect, provide a clear quote, and you decide—no pressure.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section section--alt reviews-section" id="reviews">
+  <div class="reviews-bg"></div>
+  <div class="reviews-overlay"></div>
+
+  <div class="container reviews-content">
+
+    <div class="container">
+      <div class="section__head">
+        <h2>Reviews</h2>
+        <p class="section__sub">Realistic customer feedback from Fort Wayne, IN.</p>
+      </div>
+
+      <div class="reviewSlider" aria-label="Customer reviews slideshow">
+        <button class="sliderBtn" id="prevReview" aria-label="Previous review">‹</button>
+
+        <div class="reviewViewport">
+          <div class="reviewTrack" id="reviewTrack">
+            <!-- 10 reviews -->
+            <article class="review">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>“Quick response, super professional, and the cleanup was spotless. They removed two problem trees and I honestly can’t believe how smooth it went.”</p>
+              <div class="reviewMeta">— Ashley K., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“The quote was clear and exactly what we paid. No surprises. Great communication and the yard looks better than it has in years.”</p>
+              <div class="reviewMeta">— Jordan M., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“Stump grinding was fast and clean. I can mow without dodging stumps now. Highly recommend TSNM.”</p>
+              <div class="reviewMeta">— Danielle R., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“They trimmed bushes that were scraping our siding and blocking the walkway. Everything is neat and shaped perfectly.”</p>
+              <div class="reviewMeta">— Chris L., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“Financing helped us get it done now instead of putting it off. Great service and very respectful crew.”</p>
+              <div class="reviewMeta">— Megan T., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“We had storm damage and they handled it professionally. Honest assessment and the work was done safely.”</p>
+              <div class="reviewMeta">— Brandon S., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“The fixed quote gave us peace of mind. We scheduled when we were ready and the price stayed the same.”</p>
+              <div class="reviewMeta">— Nicole P., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“Landscaping refresh made our front yard look brand new. Clean edging, mulch, and the details were on point.”</p>
+              <div class="reviewMeta">— Tyler G., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“Marcus was straightforward and helpful. No pressure, just good advice and quality work.”</p>
+              <div class="reviewMeta">— Heather B., Fort Wayne, IN</div>
+            </article>
+
+            <article class="review">
+              <div class="stars">★★★★★</div>
+              <p>“On time, professional, and you can tell they care about doing it right. I’d use TSNM again.”</p>
+              <div class="reviewMeta">— Kevin W., Fort Wayne, IN</div>
+            </article>
+          </div>
+        </div>
+
+        <button class="sliderBtn" id="nextReview" aria-label="Next review">›</button>
+      </div>
+
+      <div class="sliderDots" id="sliderDots" aria-label="Review slide position"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__brand">Tree Service Near Mee</div>
+        <div class="footer__muted">Owner: Marcus Ringswald</div>
+      </div>
+
+      <div class="footer__links">
+        <a href="tel:+12604669997">(260) 466-9997</a>
+        <a href="mailto:marcusringswald13@gmail.com">marcusringswald13@gmail.com</a>
+        <a href="#estimate">Free Inspection</a>
+      </div>
+
+      <div class="footer__copy">
+        © <span id="year"></span> Tree Service Near Mee. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
